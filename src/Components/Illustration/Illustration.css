@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=Illustration.css.map */
+.rocket_container {
+  max-height: 444px;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rocket {
+  position: absolute;
+  left: 67.01%;
+  right: 25.9%;
+  top: 11.98%;
+  bottom: 69.79%;
+  z-index: 3;
+}
+
+.rocket .capsule {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+}
+
+.rocket .landing {
+  position: relative;
+  bottom: 15%;
+  left: 1%;
+  z-index: 1;
+}
+
+.rocket .smoke {
+  position: relative;
+  bottom: 54%;
+  left: 59%;
+  z-index: 1;
+}
+
+.rocket .smoke_two {
+  position: relative;
+  bottom: 100%;
+  left: -66%;
+  z-index: 1;
+}
+
+.planet {
+  position: absolute;
+  left: 57.64%;
+  right: 16.32%;
+  top: 21.35%;
+  bottom: 30.21%;
+}
+/*# sourceMappingURL=Illustration.css.map */

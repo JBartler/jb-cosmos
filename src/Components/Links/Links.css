@@ -1,9 +1,11 @@
 .links_container {
-  position: relative;
+  position: absolute;
   left: 260px;
   top: 160px;
   max-height: 448px;
   max-width: 350px;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,10 +17,10 @@
   -ms-flex-line-pack: justify;
       align-content: space-between;
   overflow: hidden;
+  z-index: 2;
 }
 
 .links_container .link {
-  background-color: black;
   max-height: 208px;
   max-width: 160px;
   height: 100vh;
@@ -29,5 +31,11 @@
   width: 100%;
   height: 100%;
   border-radius: 16px;
+}
+
+.main_links {
+  width: 50%;
+  max-height: 574px;
+  height: 100%;
 }
 /*# sourceMappingURL=Links.css.map */

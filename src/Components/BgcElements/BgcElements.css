@@ -1,10 +1,7 @@
-.dots, .dots .first, .dots .secound, .dots .third, .dots .forth {
+.dots .first, .dots .secound, .dots .third, .dots .forth {
   width: 8px;
   height: 8px;
   border-radius: 100%;
-}
-
-.dots .first {
   position: absolute;
   background-color: #E34A67;
   left: 5.62%;
@@ -32,13 +29,13 @@
   top: 10.94%;
 }
 
-.circles, .circles .first, .circles .secound, .circles .third {
+.circles, .circles .first, .circles .dots .forth, .dots .circles .forth, .circles .secound, .circles .third {
   background: -webkit-gradient(linear, left top, left bottom, from(#2B2347), to(#221B3A));
   background: linear-gradient(180deg, #2B2347 0%, #221B3A 100%);
   border-radius: 50%;
 }
 
-.circles .first {
+.circles .first, .circles .dots .secound, .dots .circles .secound, .circles .dots .third, .dots .circles .third, .circles .dots .forth, .dots .circles .forth {
   position: absolute;
   left: -12.29%;
   right: 88.23%;

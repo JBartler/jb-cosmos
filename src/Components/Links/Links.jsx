@@ -11,10 +11,10 @@ import '../Links/Links.css'
 
 export default function Links() {
     return (
-
+        <div className="main_links">
         <div className='links_container'>
             <div className="link link1">
-                <img src={capsules} alt="capsules photo" />
+                <img src={capsules} alt="capsules phot" />
                 <p>Capsules</p>
             </div>
             <div className="link link2">
@@ -22,13 +22,14 @@ export default function Links() {
                 <p>Crew</p>
             </div>
             <div className="link link3">
-                <img src={rockets} alt="rockets photo" />
+                <img src={rockets} alt="rockets phot" />
                 <p>Rockets</p>
             </div>
             <div className="link link4">
-                <img src={details} alt="details photo" />
+                <img src={details} alt="details phot" />
                 <p>Details</p>
             </div>
+        </div>
         </div>
 
     )
