@@ -1,13 +1,19 @@
 import React from 'react'
 
-import logo from '../../Icons/Logo.png';
+import logo from '../../Assets/Logo.png';
+import vector from '../../Assets/Vector.png'
 
 import './Navbar.css'
 
 export default function Navbar() {
     return (
-        <div>
-            <img src={logo} alt='logo icon' />
-        </div>
+        <>
+        <div className="navbar">
+            <a href="/">
+                <img src={logo} alt='logo usertive' />
+                <img src={vector} alt="vector logo usertive" className="vector" />
+            </a>
+            </div>
+        </>
     )
 }

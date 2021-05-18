@@ -1,0 +1,70 @@
+
+.dots
+    width: 8px
+    height: 8px
+    border-radius: 100%
+
+    .first
+        @extend .dots
+        position: absolute
+        background-color: #E34A67
+        left: 5.62%
+        top: 18.75%
+
+    .secound
+        @extend .dots
+        position: absolute
+        background-color: #E34A67
+        left: 87.43%
+        top: 71.88%
+
+    .third
+        @extend .dots
+        position: absolute
+        background-color: #7860D7
+        left: 45.83%
+        top: 84.9%
+
+    .forth
+        @extend .dots
+        position: absolute
+        background-color: #00C9B7
+        left: 60.76%
+        top: 10.94%
+
+.circles
+    background: linear-gradient(180deg, #2B2347 0%, #221B3A 100%)
+    border-radius: 50%
+
+    .first
+        @extend .circles
+        position: absolute
+        left: -12.29%
+        right: 88.23%
+        top: 41.93%
+        bottom: 12.97%
+        mask: radial-gradient(ellipse at center,
+        rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
+        rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100% )
+
+    .secound
+        @extend .circles
+        position: absolute
+        left: 33.61%
+        right: 42.33%
+        top: -26.82%
+        bottom: 81.72%
+        mask: radial-gradient(ellipse at center,
+        rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
+        rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100% )
+
+    .third
+        @extend .circles
+        position: absolute
+        left: 86.32%
+        right: -10.38%
+        top: 14.06%
+        bottom: 40.83%
+        mask: radial-gradient(ellipse at center,
+        rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
+        rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100% )
