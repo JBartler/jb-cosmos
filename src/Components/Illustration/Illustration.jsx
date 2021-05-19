@@ -22,8 +22,8 @@ export default function Illustration() {
                 <div className="planet" >
                     <img src={planet} alt="animate planet" />
                 </div>
-                <button>Launch Rocket!</button>
             </div>
+            <button>Launch Rocket!</button>
         </div>
     )
 }
