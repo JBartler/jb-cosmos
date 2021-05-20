@@ -32,6 +32,7 @@
   background: -webkit-gradient(linear, left bottom, left top, from(#2B224A), to(rgba(43, 34, 74, 0)));
   background: linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%);
   border-radius: 13px;
+  position: relative;
 }
 
 .links_container .link:hover {
@@ -50,8 +51,11 @@
   background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  text-align: center;
+  position: absolute;
+  border-style: none;
+  width: 64px;
+  height: 20px;
+  bottom: 24px;
 }
 
 input {

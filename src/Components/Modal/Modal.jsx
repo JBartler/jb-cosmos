@@ -1,30 +1,29 @@
-import React,{ useState } from 'react'
+import React,{useContext} from 'react'
+import {Context} from '../Store/GlobalStore'
 
 import './Modal.css'
 
 function Modal() {
 
-    const [show, setShow] = useState(false);
-    const openModal = () => setShow(true);
-    const closeModal = () => setShow(false);
+    const [state, setState] = useContext(Context);
 
     return (
         <>
-            <div className={show ? "modal_container" : "hide"} >
+            <div className={state.show ? "modal_container" : "hide"} >
             <div className="modal">
                 <h2>title</h2>
                 <div className="close">
-                    <button onClick={closeModal}>X</button>
-                    {console.log(show)}
+                    <button id="close" onClick={() => setState({show: false})}>X</button>
                 </div>
-                {/* <input type="text" /> */}
                 <div className="type">
                     <div className="type_title">
                         <div className="icon"></div>
+                        <p>typ</p>
                     </div>
                 </div>
                 <div className="status">
                     <div className="icon"></div>
+                    <p>status</p>
                 </div>
             </div>
         </div>

@@ -76,5 +76,10 @@ button {
   background-color: #7860D7;
   border-radius: 8px;
   cursor: pointer;
+  border-style: none;
+}
+
+button:hover {
+  background-color: #05C9B7;
 }
 /*# sourceMappingURL=Illustration.css.map */
