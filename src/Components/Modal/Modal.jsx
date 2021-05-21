@@ -1,22 +1,19 @@
-import React,{useContext,useEffect,useState} from 'react'
-import {Context} from '../Store/GlobalStore'
+import React from 'react'
 
 import './Modal.css'
 
-function Modal({title}) {
-
-    const [state, setState] = useContext(Context);
-
-
-
+function Modal({title, name}) {
+    
     return (
         <>
-            <div className="api_name">
+        <div className="modalSection">
+            <div className="apiName">
                 {title}
             </div>
-            <div className="api_status">
-                
+            <div className="apiStatus">
+                {name}
             </div>
+        </div>
         </> 
     )
 }

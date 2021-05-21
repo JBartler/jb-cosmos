@@ -26,5 +26,36 @@
   background: linear-gradient(0deg, #2B224A, #2B224A), #FFFFFF;
   -webkit-box-shadow: 0px 12px 32px rgba(22, 13, 49, 0.4);
           box-shadow: 0px 12px 32px rgba(22, 13, 49, 0.4);
+  overflow-y: scroll;
+}
+
+.modalSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  max-width: 460px;
+  max-height: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 16px auto 28px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalSection .apiName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 214px;
+  width: 100%;
+}
+
+.modalSection .apiStatus {
+  max-width: 214px;
+  width: 100%;
 }
 /*# sourceMappingURL=Modal.css.map */

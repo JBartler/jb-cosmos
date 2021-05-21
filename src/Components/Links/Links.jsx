@@ -18,11 +18,10 @@ function Links() {
 
     const [state, setState] = useContext(Context)
 
-    const [capsules, setCapsules] = useState([])
-    const [crew, setCrew] = useState([])
-    const [rockets, setRockets] = useState([])
-    const [startlink, setStarlink] = useState([])
-
+    const [res, setRes] = useState([])
+    const [name, setName] =useState('')
+    const [firstColumn, setFirstColumt] =useState('')
+    const [secoundColumn, setSecoundColumn] =useState('')
 
         useEffect(() => {
             getCapsules()
@@ -42,65 +41,70 @@ function Links() {
             const response = await fetch('https://api.spacexdata.com/v4/capsules')
             const data = await response.json();
             const data_array = [...data]
-            setCapsules(data_array)
+            setRes(data_array)
         }
         const getCrew = async () => {
             const response = await fetch('https://api.spacexdata.com/v4/crew')
             const data = await response.json();
-            setCrew(data.map(name => console.log(name.name, name.status)))
+            const data_array = [...data]
+            setRes(data_array)
         }
         const getRockets = async () => {
             const response = await fetch('https://api.spacexdata.com/v4/rockets')
             const data = await response.json();
-            setRockets(data.map(name => console.log(name.name, name.active)))
+            const data_array = [...data]
+            setRes(data_array)
         }
         const getStarlink = async () => {
             const response = await fetch('https://api.spacexdata.com/v4/starlink')
             const data = await response.json();
-            setStarlink(data.map(name => console.log()))
+            const data_array = [...data]
+            setRes(data_array)
         }
-
-        
 
     return (
         <>     
         <div className="section">
         <div className="main_links">
         <div className='links_container'>
-            <div className="link link1"  onClick={(props) => {setState({show: true}); getCapsules();}}>
+            <div className="link link1"  onClick={() => {setState({show: true}); getCapsules(); setName("Capsules"); setFirstColumt("Type"); setSecoundColumn('Status')}}>
                 <img src={capsules_photo} alt="capsules phot" />
                 <button className='link_button'>Capsules</button>
             </div>
-            <div className="link link2" onClick={() => {setState({show: true}); getCrew();}}>
+            <div className="link link2" onClick={() => {setState({show: true}); getCrew();setName("Crew"); setFirstColumt("Name"); setSecoundColumn('Status')}}>
                 <img src={crew_photo} alt="crew phot" />
                 <button className='link_button'>Crew</button>
             </div>
-            <div className="link link3" onClick={() => {setState({show: true}); getRockets();}}>
+            <div className="link link3" onClick={() => {setState({show: true}); getRockets();setName("Rockets"); setFirstColumt("Name"); setSecoundColumn('Type')}}>
                 <img src={rockets_photo} alt="rockets phot" />
                 <button className='link_button' >Rockets</button>
             </div>
-            <div className="link link4" onClick={() => {setState({show: true}); getStarlink();}}>
+            <div className="link link4" onClick={() => {setState({show: true}); getStarlink();setName("Starlink"); setFirstColumt("Object name"); setSecoundColumn('version')}}>
                 <img src={starlink_photo} alt="details phot" />
-                <button className='link_button'>Details</button>
+                <button className='link_button'>Starlink</button>
             </div>
         </div>
         </div>
         <Illustration />
         </div>
         <>
+
         <div className={state.show ? "modal_container" : "hide"} >
             <div className="modal">
-                <h2>pupeczka</h2>
+                <h2>{name}</h2>
                 <div className="close">
                     <button id="close" onClick={() => setState({show: false})}>X</button>
                 </div>
                 <div className="type">
                     <div className="type_title">
                         <div className="icon"></div>
-                        <p>Typ i sortowanie</p>
-                        {capsules.map(capsule =>(
+                        <p>{firstColumn}</p>
+                        <p>{secoundColumn}</p>
+                        {res.map(prop =>(
                             <Modal
-                            title={capsule.type}
+                            key= {prop.id}
+                            title={prop.name || prop.type || prop.spaceTrack.OBJECT_NAME}
+                            name={prop.status || prop.type || prop.version || prop.active}
                             />
                         ))}
                     </div>
