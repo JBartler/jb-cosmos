@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <>
         <div className="navbar">
-            <a href="/">
+            <a href="https://jbartler.github.io/jb-cosmos/">
                 <img src={logo} alt='logo usertive' />
                 <img src={vector} alt="vector logo usertive" className="vector" />
             </a>
