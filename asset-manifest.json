@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/jb-cosmos/static/css/main.e721bedc.chunk.css",
+    "main.js": "/jb-cosmos/static/js/main.f8722e69.chunk.js",
+    "main.js.map": "/jb-cosmos/static/js/main.f8722e69.chunk.js.map",
+    "runtime-main.js": "/jb-cosmos/static/js/runtime-main.65f84214.js",
+    "runtime-main.js.map": "/jb-cosmos/static/js/runtime-main.65f84214.js.map",
+    "static/js/2.91f492f8.chunk.js": "/jb-cosmos/static/js/2.91f492f8.chunk.js",
+    "static/js/2.91f492f8.chunk.js.map": "/jb-cosmos/static/js/2.91f492f8.chunk.js.map",
+    "static/js/3.b4fab42d.chunk.js": "/jb-cosmos/static/js/3.b4fab42d.chunk.js",
+    "static/js/3.b4fab42d.chunk.js.map": "/jb-cosmos/static/js/3.b4fab42d.chunk.js.map",
+    "index.html": "/jb-cosmos/index.html",
+    "static/css/main.e721bedc.chunk.css.map": "/jb-cosmos/static/css/main.e721bedc.chunk.css.map",
+    "static/js/2.91f492f8.chunk.js.LICENSE.txt": "/jb-cosmos/static/js/2.91f492f8.chunk.js.LICENSE.txt",
+    "static/media/Capsules.d74f3cf5.png": "/jb-cosmos/static/media/Capsules.d74f3cf5.png",
+    "static/media/Crew.3cff2cc2.png": "/jb-cosmos/static/media/Crew.3cff2cc2.png",
+    "static/media/Details.da38db64.png": "/jb-cosmos/static/media/Details.da38db64.png",
+    "static/media/Planet.3fb29cc0.png": "/jb-cosmos/static/media/Planet.3fb29cc0.png",
+    "static/media/Rockets.cc2a885a.png": "/jb-cosmos/static/media/Rockets.cc2a885a.png",
+    "static/media/close.5df3986e.svg": "/jb-cosmos/static/media/close.5df3986e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65f84214.js",
+    "static/js/2.91f492f8.chunk.js",
+    "static/css/main.e721bedc.chunk.css",
+    "static/js/main.f8722e69.chunk.js"
+  ]
+}
