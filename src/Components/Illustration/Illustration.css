@@ -1,4 +1,4 @@
-.rocket_container {
+.rocketContainer {
   max-height: 444px;
   max-width: 375px;
   display: -webkit-box;
@@ -41,7 +41,7 @@
   z-index: 1;
 }
 
-.rocket .smoke_two {
+.rocket .smokeTwo {
   position: relative;
   bottom: 100%;
   left: -66%;
@@ -56,7 +56,7 @@
   bottom: 30.21%;
 }
 
-.main_anim {
+.mainAnim {
   width: 50%;
   max-height: 574px;
   height: 100%;
@@ -77,10 +77,16 @@ button {
   border-radius: 8px;
   cursor: pointer;
   border-style: none;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 button:hover {
   background-color: #05C9B7;
+}
+
+.launchRocket {
+  font-size: 16px;
 }
 
 @-webkit-keyframes circle {
